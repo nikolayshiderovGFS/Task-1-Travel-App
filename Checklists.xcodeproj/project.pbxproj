@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4550719527217A6000B0F48F /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4550719427217A6000B0F48F /* ChecklistItem.swift */; };
+		455071992721A91700B0F48F /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455071982721A91700B0F48F /* AddItemViewController.swift */; };
+		458866C62726B8E200C86161 /* ChecklistsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 458866C42726B8E200C86161 /* ChecklistsModel.xcdatamodeld */; };
+		458866C92726BAEB00C86161 /* Landmark+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458866C72726BAEB00C86161 /* Landmark+CoreDataClass.swift */; };
+		458866CA2726BAEB00C86161 /* Landmark+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458866C82726BAEB00C86161 /* Landmark+CoreDataProperties.swift */; };
 		45E2972A27205A9C000AA5BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E2972927205A9C000AA5BA /* AppDelegate.swift */; };
 		45E2972C27205A9C000AA5BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E2972B27205A9C000AA5BA /* SceneDelegate.swift */; };
-		45E2972E27205A9C000AA5BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E2972D27205A9C000AA5BA /* ViewController.swift */; };
+		45E2972E27205A9C000AA5BA /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E2972D27205A9C000AA5BA /* ChecklistViewController.swift */; };
 		45E2973127205A9C000AA5BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E2972F27205A9C000AA5BA /* Main.storyboard */; };
 		45E2973327205A9D000AA5BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E2973227205A9D000AA5BA /* Assets.xcassets */; };
 		45E2973627205A9D000AA5BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E2973427205A9D000AA5BA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4550719427217A6000B0F48F /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
+		455071982721A91700B0F48F /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		458866C52726B8E200C86161 /* ChecklistsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChecklistsModel.xcdatamodel; sourceTree = "<group>"; };
+		458866C72726BAEB00C86161 /* Landmark+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Landmark+CoreDataClass.swift"; sourceTree = "<group>"; };
+		458866C82726BAEB00C86161 /* Landmark+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Landmark+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		45E2972627205A9C000AA5BA /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E2972927205A9C000AA5BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45E2972B27205A9C000AA5BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		45E2972D27205A9C000AA5BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45E2972D27205A9C000AA5BA /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
 		45E2973027205A9C000AA5BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45E2973227205A9D000AA5BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45E2973527205A9D000AA5BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		458866CB2726BAF400C86161 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				458866C72726BAEB00C86161 /* Landmark+CoreDataClass.swift */,
+				458866C82726BAEB00C86161 /* Landmark+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		45E2971D27205A9C000AA5BA = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +75,17 @@
 		45E2972827205A9C000AA5BA /* Checklists */ = {
 			isa = PBXGroup;
 			children = (
+				458866CB2726BAF400C86161 /* Model */,
 				45E2972927205A9C000AA5BA /* AppDelegate.swift */,
 				45E2972B27205A9C000AA5BA /* SceneDelegate.swift */,
-				45E2972D27205A9C000AA5BA /* ViewController.swift */,
+				45E2972D27205A9C000AA5BA /* ChecklistViewController.swift */,
 				45E2972F27205A9C000AA5BA /* Main.storyboard */,
 				45E2973227205A9D000AA5BA /* Assets.xcassets */,
 				45E2973427205A9D000AA5BA /* LaunchScreen.storyboard */,
 				45E2973727205A9D000AA5BA /* Info.plist */,
+				4550719427217A6000B0F48F /* ChecklistItem.swift */,
+				455071982721A91700B0F48F /* AddItemViewController.swift */,
+				458866C42726B8E200C86161 /* ChecklistsModel.xcdatamodeld */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -138,9 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45E2972E27205A9C000AA5BA /* ViewController.swift in Sources */,
+				455071992721A91700B0F48F /* AddItemViewController.swift in Sources */,
+				45E2972E27205A9C000AA5BA /* ChecklistViewController.swift in Sources */,
 				45E2972A27205A9C000AA5BA /* AppDelegate.swift in Sources */,
+				458866CA2726BAEB00C86161 /* Landmark+CoreDataProperties.swift in Sources */,
+				458866C92726BAEB00C86161 /* Landmark+CoreDataClass.swift in Sources */,
 				45E2972C27205A9C000AA5BA /* SceneDelegate.swift in Sources */,
+				458866C62726B8E200C86161 /* ChecklistsModel.xcdatamodeld in Sources */,
+				4550719527217A6000B0F48F /* ChecklistItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +322,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,6 +350,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +388,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		458866C42726B8E200C86161 /* ChecklistsModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				458866C52726B8E200C86161 /* ChecklistsModel.xcdatamodel */,
+			);
+			currentVersion = 458866C52726B8E200C86161 /* ChecklistsModel.xcdatamodel */;
+			path = ChecklistsModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 45E2971E27205A9C000AA5BA /* Project object */;
 }
